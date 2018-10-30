@@ -40,17 +40,15 @@ while i < len(nombres):
 
 	#Imprimimos el nombre y los apellidos para comprobar
 	#print(primerNombre, apellidos)
-	#Agregamos una etiqueta
+	#Agregamos una etiqueta a cada columna
 	worksheet.write('A1', 'Nombre', bold)
 	worksheet.write('B1', 'Apellidos', bold)
+	
+	#Escribimos los datos en cada columna
 	worksheet.write(row+1, col, primerNombre)
 	worksheet.write(row+1, col +1 , apellidos)
 	row += 1
 	i = i + 1
 
-	#for nombre in (primerNombre):
-	#	worksheet.write(row, col, nombre)
-	#	worksheet.write(row, col +1 , apellidos)
-	#	row += 1
 
 workbook.close()
